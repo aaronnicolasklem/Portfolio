@@ -1,0 +1,62 @@
+<%-include('partials/head') %>
+
+    <body>
+
+        <h1>Admin Panel</h1>
+        <p>Enter information for new project uploads</p>
+        </div>
+        <form action="/projects?_method=DELETE" method="POST" >
+            <button>Reset</button>
+        </form>
+        <form action="/projects" method="POST">
+            <label for="name">Project Name</label>
+            <input type="text" name="name" placeholder="name">
+            <label for="isHighlight">Is it a Highlight</label>
+            <select name="isHighlight" type="radio">
+                <option value="false">False</option>
+                <option value="true">True</option>
+            </select>
+            <div>
+                <h2> Tags</h2>
+                <div>
+                    <h3> Medium</h3>
+                    <label for="digital">Digital</label>
+                    <input type="checkbox" name="digital" id="tag_digital">
+                    <label for="digital">Digital</label>
+                    <input type="checkbox" name="digital" id="tag_digital">
+                    <hr>
+                </div>
+                <div>
+                    <h3> Other</h3>
+                    <label for="digital">Digital</label>
+                    <input type="checkbox" name="digital" id="tag_digital">
+                    <label for="digital">Digital</label>
+                    <input type="checkbox" name="digital" id="tag_digital">
+                    <hr>
+                </div>
+                <div>
+                    <h3>Assets</h3>
+                    <label for="thumbnailImg">Project Name</label>
+                    <input type="text" name="thumbnailImg" placeholder="thumbnail.jpg" value="Thumbnail.jpg">
+                </div>
+                <div>
+                    <h3>Write Up</h3>
+                    <div>
+                    <label for="projectDescription">Project Description</label>
+                    <input type="textarea" name="projectDescription">
+                </div>
+                <div>
+                    <label for="  projectBlurb">Project Blurb</label>
+                    <input type="textarea" name="projectBlurb">
+                </div>
+
+                 
+                </div>
+            </div>
+            <input type="submit">
+        </form>
+        </form>
+
+
+
+        <%-include('partials/foot.ejs') %>

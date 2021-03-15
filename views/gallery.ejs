@@ -1,0 +1,58 @@
+<%-include('partials/navbar.ejs') %>
+
+    <div class="blurb gallery row">
+        <div class="col">
+            <h2>Welcome to the Gallery</h2>
+            <p>This is a complete collection of all my stuff, rough and finsihed mixed together. If you'd like to see
+                only
+                prime pieces check out my highlights <a href="highlights">HERE. </a></p>
+            <p>I do my best to keep this section filled up with all my rough drafts and planning bits, the nitty gritty
+                to
+                show how I approach a project. Partialy cause someone may find it helpful and partialy because it helps
+                me
+                to grow and explain.</p>
+            <p>I'm not a fan of tiny boxes that work via magic and well wishes. All work is messy, even the stuff we go
+                at
+                lengths to buff and shine. This is my open workshop! Come on in!</p>
+        </div>
+
+    </div>
+
+    <div class="gallery searchNtag row">
+        <div class=" col">
+            <img class="outline" width="40px" src="assets/tags.png">
+        </div>
+        <div class="col-auto">
+            <textarea cols="30"></textarea>
+        </div>
+        <div class=" col">
+            <img class='outline' width="40px" src="assets/search.png">
+        </div>
+
+    </div>
+    <a href="/add">Testing, Add project</a>
+    <hr style="border: 2px solid white;">
+    <div>
+        <% for(let project of projects){%>
+
+            <div class="card">
+               
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img width="150px" src="/assets/<%=project.thumbnailImg%>">
+                        </div>
+                        <div class="col-md-8 float-right" >
+                            <h2><a href="/projects/<%=project.id%>">
+                                    <%= project.name%>
+                                </a></h2>
+                            <p style="color: black"><%= project.projectBlurb%></p>
+                            <a href="/projects/<%= project.id%>"><button class="btn btn-dark" >Project Details</button></a>
+                        </div>
+                    </div>
+             
+
+
+            </div>
+            <% } %>
+    </div>
+    <%-include('partials/foot.ejs') %>

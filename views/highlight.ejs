@@ -1,0 +1,22 @@
+<%-include('partials/navbar')  %> 
+
+<body>
+<div>
+        <% for(let project of projects){%>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-4">
+                    <img width="150px" src="/assets/<%=project.thumbnailImg%>">
+                </div>
+                <div class="col-md-8">
+                    <h2><a href="/projects/<%=project.id%>"><%= project.name%></a></h2>
+                    <p><%= project.blurb%></p>
+                    <button class="btn btn-dark" href="/projects/:<%= project.id%>">Project Details</button>
+                </div>
+            </div>
+                <% } %>
+            </div>
+
+    </div>
+
+    <%-include('partials/foot') %>
