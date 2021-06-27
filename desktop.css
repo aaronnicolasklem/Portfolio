@@ -1,0 +1,54 @@
+body{
+    background-color: #496D83;
+    width: 100%;
+    color: #443929;
+   
+}
+a{
+    text-decoration:none;
+    color: #443929;
+}
+
+.card{
+    border-top: solid 1px #333333;
+    background-color:#E8DACC;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+.card:hover{
+    background-color:#293E4F;
+}
+
+#footer{
+    left: 0;
+    padding-left: 10px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(128, 128, 128,.2);
+}
+
+#splash_Container{
+    border-top: #333333 solid 3px;
+    width: 80%;
+    margin-top: 50px;
+}
+#splash_ProjectList{
+    border-left: #333333 solid 3px;
+}
+
+#splashBlurb{
+   margin-top: 100%;
+}
+#navTitle{
+    font-size: 2em;
+    border-left: #333333 solid 2px;
+    border-right: #333333 solid 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.container{
+    border-top: #333333 solid 3px;
+    width: 80%;
+    margin-top: 50px;
+}
